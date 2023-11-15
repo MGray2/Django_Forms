@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block body %}
+
+<form>
+  <h2>Front Times</h2>
+  <p>
+    Given a string and a non-negative int n, we'll say that the front of the
+    string is the first 3 chars, or whatever is there if the string is less than
+    length 3. Return n copies of the front
+  </p>
+  <h3>Type your word here</h3>
+  <input type="text" required name="word" />
+  <h3>Give a number for how many iterations</h3>
+  <input type="number" required name="times" />
+  <button>Enter</button>
+</form>
+<h1>{{ result }}</h1>
+
+{% endblock %}

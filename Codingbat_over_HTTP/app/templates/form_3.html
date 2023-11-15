@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block body %}
+
+<h1>'xyz' There</h1>
+<p>
+  Return True if the given string contains an appearance of "xyz" where the xyz
+  is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does
+  not.
+</p>
+<form>
+  <h3>Your word goes here</h3>
+  <input type="text" required name="word" />
+  <button>Enter</button>
+</form>
+<h1>
+  {{ result }}
+  <h1>{% endblock %}</h1>
+</h1>

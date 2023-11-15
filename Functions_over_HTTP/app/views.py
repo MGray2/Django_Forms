@@ -55,7 +55,7 @@ def form_page3(request: HttpRequest) -> HttpResponse:
         burger_total = burgers * 4.5
         fries_total = fries * 1.5
         drinks_total = drinks * 1
-        grand_total = burger_total + fries_total + drinks_total
+        grand_total = f"Total: ${burger_total + fries_total + drinks_total :.2f}"
     else:
         grand_total = ""
     return render(request, "form_3.html", {"total": grand_total})

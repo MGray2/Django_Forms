@@ -16,7 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from app.views import (
+    landing_page,
+    front_times,
+    no_teen_sum,
+    xyz_there,
+    centered_average,
+)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
+    path("", landing_page),
+    path("warmup-2/font-times/", front_times),
+    path("logic-2/no-teen-sum/", no_teen_sum),
+    path("string-2/xyz-there/", xyz_there),
+    path("list-2/centered-average/", centered_average),
 ]
